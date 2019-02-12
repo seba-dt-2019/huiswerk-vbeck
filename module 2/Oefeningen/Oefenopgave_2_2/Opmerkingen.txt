@@ -1,0 +1,5 @@
+Wat gebeurt er als de hoogte van het rechthoek een even getal geeft?
+* De vier kwadranten passen precies in hun kaders.
+
+Wat gebeurt er als de hoogte oneven is?
+* Onder de onderste kwadranten zit een witte strook.
