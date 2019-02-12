@@ -1,0 +1,7 @@
+Wat valt je op aan de uitkomsten en hoe zou dit komen?
+
+De vijfde en zesde som geven verschillende resultaten, ondanks hun gelijkheid. 
+
+Dit komt doordat het getal "45" geïnterpreteerd wordt als geheel getal (datatype int) en als zodanig wordt verwerkt. Een berekening op dit getal zal alleen in gehele getallen resulteren; als de uitkomst in werkelijkheid een decimaal getal is, is de uitkomst in het programma het getal vóór de komma.
+
+Het getal "45,0" wordt echter geïnterpreteerd als decimaal getaal (datatype float). Een berekening op dit getal kan daarom resulteren in een decimaal getal. 
