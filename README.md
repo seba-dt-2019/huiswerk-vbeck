@@ -1,1 +1,1 @@
-Dit is mijn huiswerk onderverdeeld in weken.
+Dit is mijn huiswerk onderverdeeld in modules.
