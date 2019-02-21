@@ -8,18 +8,19 @@ void setup() {
   jongetje = loadImage("jongetje.png");
   meisje = loadImage("meisje.png");
   
+  maakGezinnen();
+}
+
+void maakGezinnen() {
   int maxGezinnen = floor(height / max(jongetje.height, meisje.height));
+  
+  for(int gezin = 0; gezin<maxGezinnen; gezin++)
+    reproduceerTotJongetje(gezin);
+}
+
+void reproduceerTotJongetje(int gezin) {
   int maxGezinsleden = floor(width / max(jongetje.width, meisje.width));
 
-  maakGezinnen(maxGezinnen, maxGezinsleden);
-}
-
-void maakGezinnen(int maxGezinnen, int maxGezinsleden) {
-  for(int gezin = 0; gezin<maxGezinnen; gezin++)
-    reproduceerTotJongetje(maxGezinsleden, gezin);
-}
-
-void reproduceerTotJongetje(int maxGezinsleden, int gezin) {
   PImage kind = null;
   int gezinsleden = 0;
     
