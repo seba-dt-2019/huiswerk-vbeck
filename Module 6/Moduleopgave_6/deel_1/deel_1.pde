@@ -20,7 +20,7 @@ void maakGezinnen(int maxGezinnen, int maxGezinsleden) {
 }
 
 void reproduceerTotJongetje(int maxGezinsleden, int gezin) {
-  PImage kind = meisje;
+  PImage kind = null;
   int gezinsleden = 0;
     
   do {
@@ -31,16 +31,16 @@ void reproduceerTotJongetje(int maxGezinsleden, int gezin) {
 }
 
 PImage produceerKind() {
-  PImage kind = meisje;
+  final int JONGETJE = 0, MEISJE = 1;
+  PImage kind = null;
+  
   int geslacht = (int) random(2);
-  final int JONGETJE = 0,
-            MEISJE = 1;
-            
+              
   switch(geslacht) {
       case JONGETJE:
         kind = jongetje;
         break;
-      case MEISJE:
+      default:
         kind = meisje;
         break;
     }
