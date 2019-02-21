@@ -1,0 +1,18 @@
+ZIJDE = 15
+AANTAL = 15
+
+grootteGrootVierkant = ZIJDE * AANTAL
+
+if grootteGrootVierkant > width || grootteGrootVierkant > height
+	display error message
+
+rectMode(center)
+draw grootVierkant(centerOfScreen, grootteGrootVierkant)
+
+xPuntLinksBoven = centerOfScreen - grootteGrootVierkant
+yPuntLinksBoven = centerOfScreen - grootteGrootVierkant
+
+for(columns = 0; columns < AANTAL; columns++)
+	for(rows = 0; rows < AANTAL; rows++) 
+		draw kleinVierkant(x=xPuntLinksBoven+rows*grootte, y=yPuntLinksBoven+columns*grootte
+

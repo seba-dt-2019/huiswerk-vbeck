@@ -1,0 +1,32 @@
+Behang plakken:
+
+Een standaardrol is 52cm breed en 10m lang.
+
+Het aantal stroken dat uit een standaardrol te krijgen is, is 10/(hoogte van de muur). De uitkomst moet je afronden naar beneden.
+
+Per strook dek je een breedte van 52cm.
+
+Voorbeeld: 
+
+Muur is 2.25m hoog en 5.50m breed
+
+10/2.25 is 4.44. Omdat het aantal stroken een discrete waarde is, rond je dit af naar beneden. Uit één rol kun je dus vier stroken halen.
+
+Elke strook heeft een breedte van 52cm. Omdat je vier stroken uit één rol kunt halen, is de berekening voor de breedte die je dekt 0.52*(aantal stroken). In dit geval 0.52*4. 
+
+Met één rol kun je voor een muur van 2.25m hoog dus een breedte van 2.08m dekken. Omdat de muur 5.50m breed is, is de berekening voor de aantal rollen dus 550/208, afronden naar boven.
+
+Algoritme:
+
+Input: muurBreedte, muurHoogte
+Output: nRollen
+
+rolHoogte = 1000
+rolBreedte = 52
+
+nStroken = floor(rolHoogte / muurHoogte)
+breedtePerRol = nStroken * rolbreedte
+
+nRollen = ceil(muurBreedte/breedtePerRol)
+
+

@@ -1,0 +1,10 @@
+Stel dat de patroonhoogte 10cm is. In een strook van 200cm lang pas dit patroon dus precies 20 keer. De volgende strook begint dan ook op precies hetzelfde punt van het patroon.
+
+Als de patroonhoogte 10cm is, maar de lengte van een strook 225cm, past het patroon er 22.5 keer in. Dan heb je aan het eind van je strook dus de eerste helft van het volgende patroon. De volgende strook begint dan met de laatste helft van dat patroon en zodoende vergaat de uitlijning van de stroken.
+
+Om dit te voorkomen moet het de regel worden om de lengte van de stroken te verlengen, zodat patronen niet worden afgekapt en de lengte van de strook de muur nog steeds volledig dekt. De berekening voor de verlengde strook is
+
+ceil(muurHoogte/patroonHoogte) * patroonHoogte.
+
+
+

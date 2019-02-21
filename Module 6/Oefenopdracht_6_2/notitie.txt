@@ -1,0 +1,13 @@
+nRijen = 10
+nKolommen = 1
+
+rijHoogte = height / nRijen 
+kolomBreedte = width / nKolommen
+
+for(kolom = 0; kolom < nKolommen; kolom++)
+	for(rij = 0; rij < nRijen; rij++)
+		getal = (rij + 1) * kolom
+		display(getal, x=kolom*kolombreedte, y=rij*rijBreedte)
+
+
+	
